@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtesIara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="logotipo"><a href="#">ArtesIara</a></li>
+            <li class="hideMobile"><a href="home.html">Home</a></li>
+            <!-- <li class="hideMobile"><a href="atelier.html">Ateliêr</a></li> -->
+            <!-- <li class="hideMobile"><a href="fora.html">Ateliêr Fora</a></li> -->
+            <!-- <li class="hideMobile"><a href="local.html">Ateliêr Local</a></li> -->
+            <!-- <li class="hideMobile"><a href="instalacoes.html">Instalações</a></li>
+            <li class="hideMobile"><a href="obras.html">Obras</a></li>
+            <li class="hideMobile"><a href="mental.html">Mental</a></li>
+            <li class="hideMobile"><a href="noticias.html">Notícias</a></li>
+            <li class="hideMobile"><a href="contato.html">Contato</a></li> -->
+            <li class="hideDesktop" onclick=showSidebar()><a href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>  
+            </a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="atelier.html">Ateliêr</a></li>
+            <!-- <li><a href="fora.html">Ateliêr Fora</a></li> -->
+            <!-- <li><a href="local.html">Ateliêr Local</a></li> -->
+            <li><a href="instalacoes.html">Instalações</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="mental.html">Mental</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            
+        </ul>
+    </header>
+
+<main>
+<div class="fotos">
+    <h2>Cuidando da mente </h2><br>
+    
+        <p class="escrita">
+            Em artes, "mental" refere-se tanto ao processo mental criativo subjacente à criação e interpretação artística, quanto à dimensão psicológica da arte, que envolve a expressão de emoções, autoconhecimento, catarse e o impacto na saúde mental. A arte é vista como um processo mental que organiza elementos para evocar sentidos e emoções, e a interpretação de uma obra é um ato subjetivo que reflete o estado mental e as experiências do observador.
+            Quando se fala em "mental" em artes, está-se a abordar a mente do artista e do apreciador, focando-se no processo de criar e de sentir, e como a arte se manifesta e se relaciona com o nosso mundo interior e a nossa saúde psicológica.
+        </p>
+    <br><br>
+    <h2>Teatro no Palácio Cruz e Souza / 2016</h2><br><br>
+ 
+        <img src=".img/interacao/eu01.JPG" alt="">
+        <img src=".img/interacao/eu02.JPG" alt="">
+        <img src=".img/interacao/eu03.JPG" alt="">
+        <img src=".img/interacao/eu04.JPG" alt="">
+        <img src=".img/interacao/eu05.JPG" alt="">
+        <img src=".img/interacao/eu06.JPG" alt="">
+</div>  
+</main>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+    }
+</script>
+
+<footer>
+    <p>Ateliêr: Rua Madalena Barbi,  -Centro-Florianopolis-SC</p>
+   
+    <p>Responsavel: Tomaz Pontes Neto</p>
+</footer>
+</body>
+</html>

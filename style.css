@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+:root {
+   --fonte1:"Dancing Script", cursive; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 10vh;
+    background-image: url(".img/Ponte.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: cursive;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    background-color: darkslateblue;
+    width: 100%;
+    padding-top: 0px;
+    top: 0px;
+    min-height: 10px;
+}
+header ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+header li {
+    height: 60px;
+}
+header li:first-child{
+    margin-right: auto;
+}
+header a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+header a:hover {
+    color: #dcdcdc;
+}
+
+.icon {
+    fill: #fff;
+}
+.logotipo {
+    font-weight: bold;
+    font-size: 2.0rem;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 999;
+    background-color: rgba(255,255,255, 0.2);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.escrita {
+    font-family: var(--fonte1);
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 20px;
+    
+}
+
+.fotos {
+    text-align: center;
+}
+h2 {
+    font-family: var(--fonte1);
+    text-align: center;
+}
+h3, h4 {
+    font-family: cursive;
+    text-align: center;
+}
+
+footer {
+    background-color: darkslateblue;
+    width: 100%;
+    text-align: center;
+   
+}
+main{
+    width: 98%;
+    text-align: justify;
+}
+@media (max-width: 800px){
+    .hideMobile{
+        display: none;
+    }
+}
+@media (min-width:800px){
+    .hideDesktop{
+        display: none;
+    }
+}

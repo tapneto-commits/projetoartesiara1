@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtesIara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="logotipo"><a href="#">ArtesIara</a></li>
+            <!-- <li class="hideMobile"><a href="home.html">Home</a></li> -->
+            <li class="hideMobile"><a href="atelier.html">Ateliêr</a></li>
+            <!-- <li class="hideMobile"><a href="fora.html">Ateliêr Fora</a></li> -->
+            <!-- <li class="hideMobile"><a href="local.html">Ateliêr Local</a></li> -->
+            <!-- <li class="hideMobile"><a href="instalacoes.html">Instalações</a></li>
+            <li class="hideMobile"><a href="obras.html">Obras</a></li>
+            <li class="hideMobile"><a href="menta.html">Mental</a></li>
+            <li class="hideMobile"><a href="noticias.html">Notícias</a></li>
+            <li class="hideMobile"><a href="contato.html">Contato</a></li> -->
+            <li class="hideDesktop" onclick=showSidebar()><a href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>  
+            </a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="atelier.html">Ateliêr</a></li>
+            <!-- <li><a href="fora.html">Ateliêr Fora</a></li> -->
+            <!-- <li><a href="local.html">Ateliêr Local</a></li> -->
+            <li><a href="instalacoes.html">Instalações</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="menta.html">Mental</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            
+        </ul>
+    </header>
+<main>
+<div class="fotos">
+    
+    
+        <p class="escrita">
+            Esta serie de trabalhos foram criados para os meus amigos,que adiquiriram o "Kit Arte" para sua reconstrução ou não. <br>
+            Alguns elementos com formas e cores diversas, são utilizados para a criação da composição.
+            O suporte da obra é a porta do refrigerador, "utilitário" do mundo domestico.
+            <br>
+            Assemblage é uma técnica artística de origem francesa, significando "montagem", que consiste em unir e colar objetos diversos, como pedaços de jornal, tecidos, madeiras e materiais encontrados, para criar obras de arte tridimensionais. Essa técnica expande os limites da pintura, incorporando materiais do cotidiano para expressar novas formas e significados, influenciada por artistas como Pablo Picasso e popularizada por Jean Dubuffet em 1953<br>
+            Obras foram fotografadas, e enviada pelos "meus amigos" como "presente".<br>
+        </p>
+   
+
+    <h3>Gabriel</h3>
+        <img src=".img/fora/Gabriel.jpg" alt="">
+       
+    <h3>Iris</h3>
+        <img src=".img/fora/Iris.jpg" alt="">
+
+    <h3>Manuela</h3>
+        <img src=".img/fora/Manuela.jpg" alt="">
+    <h3>Ramon</h3>
+        <img src=".img/fora/Ramon.jpg" alt="">
+   
+    <h3>Marcelo</h3>
+        <img src=".img/fora/Marcelo.jpg" alt="">
+
+    <h3>Denise</h3>
+        <img src=".img/fora/obra Denise.jpg" alt="">
+    <h3>Zani</h3>
+        <img src=".img/fora/obra Zani.jpg" alt="">
+    <h3>Maria Marli</h3>
+        <img src=".img/fora/obra Maria.jpg" alt="">
+    <h3>Sonia</h3>
+        <img src=".img/fora/obra Sonia.jpg" alt="">
+    <h3>Iris</h3>
+        <img src=".img/fora/Iris2008.jpg" alt="">
+</div>        
+</main>
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+    }
+</script>
+
+<footer>
+    <p>Ateliêr: Rua Madalena Barbi,  -Centro-Florianopolis-SC</p>
+   
+    <p>Responsavel: Tomaz Pontes Neto</p>
+</footer>
+</body>
+</html>
