@@ -107,6 +107,8 @@ footer {
 main{
     width: 98%;
     text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 @media (max-width: 800px){
     .hideMobile{
